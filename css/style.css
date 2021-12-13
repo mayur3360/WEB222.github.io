@@ -1,0 +1,225 @@
+.responsive {
+  padding: auto;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+body {
+  margin: 0 auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  display: flex;
+  border-radius: 30px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background: url("../images/pexels-mikhail-nilov-8937577.jpg");
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/pexels-mikhail-nilov-8937577.jpg");
+
+  background-color: black;
+  border-color: #000;
+}
+
+.myskills {
+  font-size: 2vmax;
+  -webkit-animation: animatedBackground_b 4s linear infinite alternate;
+}
+
+@keyframes animatedBackground_b {
+  0% {
+    color: #ff8b00;
+  }
+  10% {
+    color: #e8ff00;
+  }
+  20% {
+    color: #5dff00;
+  }
+  30% {
+    color: #00ff2e;
+  }
+  40% {
+    color: #00ffb9;
+  }
+  50% {
+    color: #00b9ff;
+  }
+  60% {
+    color: #002eff;
+  }
+  70% {
+    color: #5d00ff;
+  }
+  80% {
+    color: #e800ff;
+  }
+  90% {
+    color: #ff008b;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+.punchLine {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-variant: calc();
+  font-weight: bold;
+  font-size: 1.5vmax;
+}
+
+.name {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  font-variant: small-caps;
+
+}
+
+.my2 {
+  height: 70px;
+  text-align: center;
+  padding: 1px;
+  padding: 0 16px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.buttonH {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button1:hover {
+  background-color: rgb(108, 112, 107);
+}
+.button:hover {
+  background-color: #555;
+}
+
+.container-left {
+  flex-basis: 50%;
+  padding: 0 21px;
+  background-color: rgb(190, 253, 232);
+}
+.container-right {
+  flex-basis: 50%;
+  padding: 10 35px;
+  background-color: rgb(190, 255, 233);
+}
+
+.container-new {
+  flex-basis: 25%;
+  padding: 40px 40px;
+  background-color: #fc5555;
+  color: #fff;
+}
+.container-old {
+  flex-basis: 25%;
+  padding: 0 26px;
+  text-align: left;
+}
+
+.buttonToHome{
+  margin:0;
+  padding:0;
+  text-align:center;
+  float:right;
+  margin-top:60px;
+  border:6px solid #3498db;
+  background:none;
+  padding: 10px 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin:10px;
+  color:#3498db;
+  transition:0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonToHome:hover{
+  color:black;
+}
+
+.buttonToHome:before{
+  content:"";
+  position:absolute;
+  left:0;
+  width:100%;
+  height:0%;
+  background:#3498db;
+  z-index :-1;
+  transition: 0.8s;
+  top:0;
+  border-radius: 0 0 50% 50%;
+}
+
+.buttonToHome:hover::before{
+  height: 180%;
+}

@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CONTACT ME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/form.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form
+        id="appt-form"
+        class="new_observation"
+        method="POST"
+        action="https://httpbin.org/post"
+      >
+        <header>
+          <nav>
+            <button
+              class="button1"
+              onclick="window.location.href='main.html';"
+            >
+              HOME
+            </button>
+          </nav>
+          <div class="pageTitle title">Contact Me</div>
+        </header>
+        <main>
+          <section>
+            <div class="secondaryTitle title">
+              Please fill this form to contact me.
+            </div>
+            <div>
+              <label for="Person_name"
+                >Your Name <span class="req_star">*</span></label
+              >
+              <br />
+              <input
+                class="in formEntry"
+                id="ob_name"
+                type="text"
+                name="Person_name"
+                placeholder="Enter Name"
+                maxlength="200"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="E-mail"
+                >Email Address <span class="req_star">*</span></label
+              >
+              <br />
+              <input
+                class="in formEntry"
+                id="ob_desc"
+                type="text"
+                name="E-mail"
+                placeholder="John5@hotmail.com"
+                required
+              />
+            </div>
+
+            <div class="mb-3 col">
+              <label for="phone" class="form-label"
+                >Phone Number <span class="req_star">*</span></label
+              >
+              <input
+                class="in formEntry"
+                class="form-control"
+                type="tel"
+                name="phone"
+                id="phone"
+                autocomplete="phone"
+                required
+                placeholder="999-888-7776"
+              />
+            </div>
+
+            <div>
+              <label for="Address"
+                >Address <span class="req_star">*</span></label
+              >
+              <br />
+              <input
+                class="in formEntry"
+                id="ob_desc"
+                type="text"
+                name="Address"
+                placeholder="House no: 286, My Street, Brampton"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="date_of_filling"
+                >Date of Filling Form <span class="req_star">*</span></label
+              >
+              <br />
+              <input
+                id="ob_date"
+                type="date"
+                name="date_of_filling"
+                required
+                class="in formEntry"
+              />
+            </div>
+            <div>
+              <label for="city_name"
+                >Choode your City <span class="req_star">*</span></label
+              >
+              <br />
+              <input
+                class="in formEntry"
+                list="city_names"
+                name="city_name"
+                id="city_name"
+                autocomplete="city_names"
+                placeholder="Toronto"
+                required
+              />
+              <datalist id="city_names">
+                <option value="Ottawa"></option>
+                <option value="Toronto"></option>
+                <option value="Victoria"></option>
+                <option value="Calgary"></option>
+                <option value="Vancouver"></option>
+                <option value="Montreal"></option>
+              </datalist>
+            </div>
+
+            <div class="mb-3 col">
+              <label for="postal-code" class="form-label"
+                >Postal Code <span class="req_star">*</span>
+              </label>
+              <input
+                class="in formEntry"
+                class="form-control"
+                type="text"
+                name="postal-code"
+                id="postal-code"
+                autocomplete="postal-code"
+                required
+                placeholder="M5W 1E6"
+              />
+            </div>
+
+            <div>
+              <label for="purpose"
+                >Purpose of Contacting <span class="req_star">*</span></label
+              >
+              <br />
+               
+              <input
+                type="radio"
+                id="click"
+                name="Person_Query"
+                value="Question"
+                required
+              />
+               <label for="Question">Question</label><br />
+               
+              <input
+                type="radio"
+                id="comments"
+                name="Person_Query"
+                value="Comments"
+                required
+              />
+                <label for="comments">Comment</label><br />
+               
+              <input
+                type="radio"
+                id="javascript"
+                name="Person_Query"
+                value="Rate"
+                required
+              />
+                <label for="rate">Hiring</label>
+
+              <textarea
+                class="in formEntry"
+                name="Question"
+                id="ob_notes"
+                rows="5"
+                cols="50"
+                placeholder="Enter Your Question"
+              ></textarea>
+              <textarea
+                class="in formEntry"
+                name="comments"
+                id="ob_notes"
+                rows="5"
+                cols="50"
+                placeholder="Enter Your Comment"
+              ></textarea>
+              <input
+                class="in formEntry"
+                class="rate"
+                name="rate"
+                id="rate"
+                placeholder="$ Enter the Hourly rate "
+              />
+            </div>
+            <div class="d-flex flex-row-reverse">
+              <div class="col-md-12 text-center">
+                <button
+                  class="submit formEntry1"
+                  type="submit"
+                  name="submit"
+                  id="submit"
+                >
+                  Submit
+                </button>
+                <button
+                  class="submit formEntry1"
+                  type="reset"
+                  name="reset"
+                  id="reset"
+                >
+                  Reset
+                </button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </form>
+    </div>
+    <script src="js/validate.js"></script>
+  </body>
+</html>
